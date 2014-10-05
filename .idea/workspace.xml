@@ -53,7 +53,7 @@
       <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/client/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="20" selection-start="404" selection-end="404" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="799">
+            <state line="40" column="12" selection-start="1171" selection-end="1171" vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,16 @@
       <file leaf-file-name="layout.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/layouts/scripts/layout.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="130" selection-start="567" selection-end="567" vertical-scroll-proportion="0.1954023" vertical-offset="0" max-vertical-offset="870">
+            <state line="16" column="20" selection-start="925" selection-end="925" vertical-scroll-proportion="0.31264368" vertical-offset="0" max-vertical-offset="870">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="27" selection-start="623" selection-end="623" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -171,6 +180,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrudTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,7 +427,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="2" selection-start="706" selection-end="706" vertical-scroll-proportion="0.4368715" vertical-offset="0" max-vertical-offset="895">
+        <state line="20" column="27" selection-start="623" selection-end="623" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/client/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="12" selection-start="1171" selection-end="1171" vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
@@ -416,16 +446,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/client/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="20" selection-start="404" selection-end="404" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/layouts/scripts/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="130" selection-start="567" selection-end="567" vertical-scroll-proportion="0.1954023" vertical-offset="0" max-vertical-offset="870">
+        <state line="16" column="20" selection-start="925" selection-end="925" vertical-scroll-proportion="0.31264368" vertical-offset="0" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
