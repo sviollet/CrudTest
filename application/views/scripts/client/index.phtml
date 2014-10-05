@@ -4,23 +4,38 @@ $this->headTitle($this->title);
 ?>
 <p><a href="<?php echo $this->url(array('controller'=>'client',
         'action'=>'add'));?>">Add new client</a></p>
-<table>
+
+<table id="demo" class="display" cellspacing="0" width="100%">
+    <thead>
     <tr>
         <th>Nom</th>
         <th>Prenom</th>
-        <th>&nbsp;</th>
+        <th>Mail</th>
     </tr>
-    <?php foreach($this->clients as $client) : ?>
+    </thead>
+
+    <tfoot>
     <tr>
-        <td><?php echo $this->escape($client->nom);?></td>
-        <td><?php echo $this->escape($client->prenom);?></td>
-        <td><?php echo $this->escape($client->mail);?></td>
-        <td>
-            <a href="<?php echo $this->url(array('controller'=>'client',
-                'action'=>'edit', 'id'=>$client->id));?>">Edit</a>
-            <a href="<?php echo $this->url(array('controller'=>'client',
-                'action'=>'delete', 'id'=>$client->id));?>">Delete</a>
-        </td>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Mail</th>
     </tr>
+    </tfoot>
+
+    <tbody>
+        <?php foreach($this->clients as $client) : ?>
+        <tr>
+            <td><?php echo $this->escape($client->nom);?></td>
+            <td><?php echo $this->escape($client->prenom);?></td>
+            <td><?php echo $this->escape($client->mail);?></td>
+            <td>
+                <a href="<?php echo $this->url(array('controller'=>'client',
+                    'action'=>'edit', 'id'=>$client->id));?>">Edit</a>
+                <a href="<?php echo $this->url(array('controller'=>'client',
+                    'action'=>'delete', 'id'=>$client->id));?>">Delete</a>
+            </td>
+        </tr>
     <?php endforeach; ?>
-</table>
+    </tbody>
+    </table>
+

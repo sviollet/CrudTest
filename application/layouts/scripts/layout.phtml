@@ -8,9 +8,23 @@ echo $this->doctype(); ?>
     <?php echo $this->headMeta(); ?>
     <?php echo $this->headTitle(); ?>
     <?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/site.css'); ?>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/CrudTest/library/DataTables/media/css/jquery.dataTables.css">
+    <script type="text/javascript" language="javascript" src="http://localhost:8080/CrudTest/library/DataTables/media/js/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="http://localhost:8080/CrudTest/library/DataTables/media/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" language="javascript" class="init">
+
+
+        $(function(){
+            $("#demo").dataTable();
+        })
+
+
+    </script>
+
 </head>
 <body>
-<div id="content">
+<div id="content" class="display">
     <h1><?php echo $this->escape($this->title); ?></h1>
     <?php echo $this->layout()->content; ?>
 </div>
