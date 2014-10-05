@@ -3,7 +3,7 @@
 abstract class Application_Controller_Actions extends Zend_Controller_Action
 {
     /**
-     * @var Application_Model_DbTable_IDbTable
+     * @var Application_Model_ICrudService
      */
     protected $_table;
     protected $_tableClass;

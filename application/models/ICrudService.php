@@ -1,6 +1,6 @@
 <?php
 
-interface Application_Model_DbTable_IDbTable {
+interface Application_Model_ICrudService {
 
     public function getAction($id);
     public function addAction($bobject);

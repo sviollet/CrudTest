@@ -14,6 +14,7 @@ $this->headTitle($this->title);
     <tr>
         <td><?php echo $this->escape($client->nom);?></td>
         <td><?php echo $this->escape($client->prenom);?></td>
+        <td><?php echo $this->escape($client->mail);?></td>
         <td>
             <a href="<?php echo $this->url(array('controller'=>'client',
                 'action'=>'edit', 'id'=>$client->id));?>">Edit</a>

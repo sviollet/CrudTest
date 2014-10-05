@@ -1,6 +1,6 @@
 <?php
 
-class Application_Model_DbTable_Client extends Zend_Db_Table_Abstract implements Application_Model_DbTable_IDbTable{
+class Application_Model_DbTable_Client extends Application_Model_DbTable_Service{
 
     protected $_name = 'clients';
 
@@ -18,14 +18,14 @@ class Application_Model_DbTable_Client extends Zend_Db_Table_Abstract implements
     public function addAction($bobject){
 
         if (is_a($bobject, Application_Model_Business_Client)) {
-
+/*
             $validator = new Zend_Validate_Db_RecordExists(
                 array(
                     'table' => $this->_name,
                     'field' => 'mail'
                 )
             );
-
+*/
             //if (!$validator->isValid($bobject->mail)) {
                 $data = $bobject->convertTodbTable();
                 $this->insert($data);

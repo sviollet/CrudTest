@@ -50,8 +50,6 @@ class ClientController extends Application_Controller_Actions
                 $this->_table->updateAction($id, $this->getValuesFromForm($form));
 
                 $this->_helper->redirector('index');
-            } else {
-                $form->populate($formData);
             }
         } else {
             if ($id > 0) {

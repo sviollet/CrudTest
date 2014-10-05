@@ -13,25 +13,22 @@ class Application_Form_Client extends Zend_Form
         $nom = new Zend_Form_Element_Text('nom');
         $nom->setLabel('Nom')
             ->setRequired(true)
-            ->addFilter('StripTags')
-            ->addFilter('StringTrim')
+            ->addFilters(array('StringTrim', 'StripTags'))
             ->addValidator('NotEmpty');
 
         $prenom = new Zend_Form_Element_Text('prenom');
         $prenom->setLabel('Prenom')
             ->setRequired(true)
-            ->addFilter('StripTags')
-            ->addFilter('StringTrim')
+            ->addFilters(array('StringTrim', 'StripTags'))
             ->addValidator('NotEmpty');
 
         $mail = new Zend_Form_Element_Text('mail');
         $mail->setLabel('Mail')
             ->setRequired(true)
             ->addFilters(array('StringTrim', 'StripTags'))
-            ->addValidator('EmailAddress',  true); // added true here
+            ->addValidator('EmailAddress',  true);
 
         $submit = new Zend_Form_Element_Submit('submit');
-        $submit->setAttrib('id', 'submitbutton');
         $this->addElements(array($id, $nom, $prenom, $mail, $submit));
     }
 
