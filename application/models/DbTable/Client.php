@@ -2,7 +2,10 @@
 
 class Application_Model_DbTable_Client extends Application_Model_DbTable_Service{
 
-    protected $_name = 'clients';
+    public function init(){
+
+        parent::init();
+    }
 
     public function getAction($id){
         $id = (int)$id;

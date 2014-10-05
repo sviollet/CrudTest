@@ -17,8 +17,8 @@ class ClientController extends Application_Controller_Actions
     public function addAction()
     {
         $form = new Application_Form_Client();
-
         $form->submit->setLabel('Add');
+
         $this->view->form = $form;
 
         if ($this->getRequest()->isPost()) {
@@ -36,8 +36,8 @@ class ClientController extends Application_Controller_Actions
     public function editAction()
     {
         $form = new Application_Form_Client();
-
         $form->submit->setLabel('Edit');
+
         $this->view->form = $form;
 
         $id = $this->_getParam('id', 0);
